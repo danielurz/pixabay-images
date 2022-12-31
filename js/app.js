@@ -18,7 +18,7 @@ function validarFormulario(e) {
     const terminoBusqueda = document.querySelector('#termino').value
 
     if(terminoBusqueda === '') {
-        mostrarAlerta('Agrega un termino de busqueda')
+        mostrarAlerta('Add a search term')
         return
     }
 
@@ -73,9 +73,9 @@ function mostrarImagenes(imagenes) {
             <div class="bg-white">
             <img class="w-full" src="${previewURL}" />
                 <div class="p-4">
-                    <p class="font-bold">${likes} <span class="font-light">Me Gusta</span></p>
-                    <p class="font-bold">${views} <span class="font-light">Veces Vista</span></p>
-                    <a class="block w-full bg-blue-800 hover:bg-blue-500 text-white uppercase font-bold text-center rounded mt-5 p-1" href="${largeImageURL}" target="_blank" rel="noopener noreferrer">Ver Imagen</a>
+                    <p class="font-bold">${likes} <span class="font-light">Liked</span></p>
+                    <p class="font-bold">${views} <span class="font-light">Views</span></p>
+                    <a class="block w-full bg-blue-800 hover:bg-blue-500 text-white uppercase font-bold text-center rounded mt-5 p-1" href="${largeImageURL}" target="_blank" rel="noopener noreferrer">View Image</a>
                 <div/>
             <div/>
         <div/>
@@ -93,7 +93,6 @@ function calcularPaginas(total) {
 // Generador de paginacion
 
 function *crearPaginador(total) {
-    console.log(total);
     for (i=1; i <= total; i++) {
         yield i
     }
