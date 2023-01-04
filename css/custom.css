@@ -12,7 +12,7 @@ body {
   #formulario, #titulo {
     padding: 0 20px;
   } 
-}
+}    
 
 @media (max-width:425px) {
   #resultado {
